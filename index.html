@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Explore and learn while having fun at Community Science Museum">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Community Science Museum | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad1493ca4b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="logo for Community science museum Website" class="logo">
+        </a>
+        <section>
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox"><i class="fa-solid fa-bars"></i></label>
+            <nav>
+                <ul>
+                    <li><a href="tickets.html">Buy tickets</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="exhibition.html">Exhibition spaces</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="involved.html">Get involved</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </header>
+    <main>
+        <section class="welcome">
+            <img src="images/homeimg.jpg" alt="inside white museum with sculptures">
+            <div class="welcome-info">
+                <h1>"Explore together"</h1>
+                <p>Come join us at the Community Science Museum where we're committed to making science accessible to all.</p>
+            </div>
+        </section>
+        <section class="news">
+            <h2 class="title">News</h2>
+            <div class="energetica">
+                <h3 class="loan">Energetica Exhibition on Loan</h3>
+                <div class="container-flex">
+                    <img src="images/windmills.jpg" alt="windmills with purple background" class="news-img">
+                    <p>On loan from the NEMO Science Museum in Amsterdam, z is coming to the Community Science Museum.</p>
+                </div>
+                <div class="cta-date cta-date-left">
+                    <a href="tickets.html">17/12/22
+                    <i class="fa-regular fa-calendar-days"></i></a>
+                </div>
+            </div>
+            <div class="night-museum">
+                <h3>Night in the Museum</h3>
+                <div class="container-flex">
+                    <img src="images/skeleton-museum.jpg" alt="skeleton suspended from the ceilling" class="news-img img-flex">
+                    <p class="night-p">Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays.</p>
+                </div>
+                <div class="cta-date cta-date-right">
+                    <a href="tickets.html">23/12/22</a>
+                    <i class="fa-regular fa-calendar-days"></i>
+                </div>
+            </div>
+            <div class="aeronautics">
+                <h3 class="visiting">Visiting Professor of Aeronautics</h3>
+                <div class="container-flex">
+                    <img src="images/pilot.jpg" alt="pilot laying on a plane" class="news-img">
+                    <p>Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics.</p>
+                </div>
+                <div class="cta-date cta-date-left">
+                    <a href="tickets.html">16/01/23</a>
+                    <i class="fa-regular fa-calendar-days"></i>
+                </div>
+            </div>
+        </section>
+        <section class="exhibition-spaces">
+            <h2>Exhibition Spaces</h2>
+            <div class="spaces-1">
+                <img src="images/mammoth-skeleton.jpg" alt="mamoth skeleton in a museum">
+                <p>Discover the origins of life on this planet and how the species we know today have evolved our time. </p>
+                <a href="exhibition.html#seccion-one" class="cta"><h3>Evolution</h3></a>
+            </div>
+            <div class="spaces-2">
+                <img src="images/hands-plant.jpg" alt="hands holding a small plant">
+                <p>In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution.</p>
+                <a href="exhibition.html#seccion-two" class="cta"><h3>Ecology</h3></a>
+            </div>
+            <div class="spaces-1">
+                <img src="images/moon.jpg" alt="moon phases">
+                <p>Discover the origins of life on this planet and how the species we know today have evolved our time. </p>
+                <a href="exhibition.html#seccion-three" class="cta"><h3>Cosmology</h3></a>
+            </div>
+            <div class="spaces-2">
+                <img src="images/heart.jpg" alt="heart prototype">
+                <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.</p>
+                <a href="exhibition.html#seccion-four" class="cta"><h3 id="biology">Biology and Medicine</h3></a>
+            </div>
+            <div class="spaces-robo">
+                <img src="images/looking-robot.jpg" alt="white robot looking at you">
+                <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
+                <a href="exhibition.html#seccion-five" class="cta"><h3>Robotics</h3></a>
+            </div>    
+        </section>
+    </main>
+    <footer>
+        <section class="sign">
+            <input type="email" name="email" id="email" class="sign_up">
+            <label for="email">Sing up</label>
+            <p>Enter your email to receive our newsletter</p>
+        </section>
+        <section class="admission-foot">
+            <h4>Admission</h4>
+            <p>The entrance is free for all.</p>
+            <p>There are guided tours of the museum that leave every hour. These tours are 70 SEK per person and include a handy printed guide of the museum.</p>
+        </section>
+        <section class="hours-location">
+            <div class="hours">
+                <h4>Hours</h4>
+                <p>Monday: Closed</p>
+                <p>Tuesday to Thursday:</p> 
+                <p>10:00-16:00</p>
+                <p>Friday: 10:00-19:00</p>
+                <p>Saturday: 9:00-16:00</p>
+                <p>Sunday: 9:00-13:00</p>
+            </div>
+            <div class="location">
+                <h4>Location</h4>
+                <p>Kingstugatan 18, 111 31 Stockholm.</p>
+                <div class="social-media">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-snapchat"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
