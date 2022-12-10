@@ -1,3 +1,676 @@
+@font-face {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;700&display=swap");
+}
+
+html,
 body {
+    height: 100%;
+}
+
+header {
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header a {
+    order: 2;
+}
+
+header section {
+    order: 1;
+}
+
+header i {
+    order: 3;
+}
+
+.logo {
+    width: 9vh;
+}
+
+.fa-solid {
+    font-size: 1.8em;
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    background-color:#FBFCDC;
+    border: 2px solid #fec400;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+header {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    border-bottom: 1px solid #fec400;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px 15px 10px;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+body {
+    background-color: #FBFCDC;
+    color:black;
+    font-family: "work Sans", Arial, Helvetica, sans-serif;
+    margin: auto;   
+    font-weight: 500;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, 
+h2 {
+    color: #0277E0;
+    font-family: "Anton";
+}
+
+h3 {
+    font-family: "Anton";
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #fec400;
+    padding: 20px 15px;
+    font-size: 0.9em;
+}
+
+.hours-location {
+    display: flex;
+    padding-top: 15px;
+}
+
+.hours-location h4 {
+    margin-bottom: 0px;
+}
+
+.social-media {
+    font-size: 2em;
+    text-align: end;
+    padding-top: 20px;
+}
+
+.hours {
+    flex: 1;
+    border-right: 2px solid #B18B0A;
+}
+
+.location {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.sign {
+    text-align: end;
+    border-bottom: 2px solid #B18B0A;
+}
+
+.sign p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    min-width: 340px;
+}
+
+.sign label {
+    font-weight: bold;
+}
+
+.sign_up {
+    border: 2px solid black;
+}
+
+.admission-foot {
+    margin-bottom: 0px;
+    border-bottom: 2px solid #B18B0A;
+    padding-bottom: 15px;
+}
+
+.admission-foot h4 {
+    margin-bottom: 0px;
+}
+
+.hours-location p,
+.admission-foot p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.3rem;
+}
+
+.heading-contact,
+.heading {
+    background-color: #0277E0;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    height: 8vh;
+    padding-top: 20px;
+} 
+
+.heading h1 {
     color: black;
 }
+
+.title {
+    background-color: #A5C8E7;
+    color: black;
+    width: 18vh;
+    height: 6vh;
+    text-align: center;
+    padding-top: 9px;
+    margin-bottom: 0;
+    position: absolute;
+    margin-top: 0px;
+    top: -30px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.services-img,
+.news-img {
+    border-radius: 50%;
+    height: 25vh;
+    width: 25vh;
+}
+
+.spaces-robo,
+.spaces-1,
+.spaces-2,
+.ages {
+    width: 34vh;
+}
+
+.csm-info,
+.rooms {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.take-part,
+.welcome-info,
+.exhibition-spaces,
+.for-all {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 55px;
+}
+
+#support,
+#volunteer,
+#internship,
+#guided,
+#access,
+#nutriment,
+#store {
+    margin-top: 0px;
+}
+
+.csm-info p,
+.be-part p,
+.ages p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+/*Home*/
+
+.spaces-robo,
+.spaces-1,
+.spaces-2 {
+    background-color: #D47636;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.spaces-1,
+.spaces-2 {
+    height: 55vh;
+}
+
+.spaces-robo p,
+.spaces-1 p,
+.spaces-2 p {
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.5rem;
+}
+
+.spaces-robo {
+    height: 65vh;
+}
+
+.spaces-robo img,
+.spaces-1 img,
+.spaces-2 img {
+    width: 34vh;
+    height: 22vh;
+    border-radius: inherit;
+}
+
+.aeronautics {
+    background-color: #459720;
+}
+
+.energetica {
+    background-color: #0277E0;
+}
+
+.night-museum {
+    background-color: #C741A2;
+}
+
+.news {
+    position: relative;
+}
+
+.news h2 {
+    width: 15vh;
+    height: 6vh;
+    padding-top: 5px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.news h3 {
+    color: #FBFCDC;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.news div {
+    padding: 10px;
+}
+
+.news p {
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.night-p {
+    width: 20vh;
+}
+
+.img-flex {
+    order:2;
+}
+
+.fa-regular {
+    font-size: 1.5em;
+}
+
+.energetica,
+.night-museum,
+.aeronautics {
+    height: 40vh;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.cta-date,
+.cta h3 {
+    border-radius: 5px;
+}
+
+.cta-date {
+    background-color: #A5C8E7;
+    color: black;
+    width: 15vh;
+    height: 3vh;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+
+.cta-date a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.cta-date-left {
+    float: inline-end;
+    margin-right: 10px;
+}
+
+.cta-date-right {
+    float: inline-start;
+    margin-left: 10px;
+}
+
+.cta h3 {
+    background-color: #fec400;
+    color: black;
+    width: 18vh;
+    height: 5vh;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+.cta {
+    text-align: center;
+    text-decoration: none;
+}
+
+.visiting,
+.loan {
+    text-align: right;
+}
+
+.loan {
+    padding-top: 15px;
+}
+
+.exhibition-spaces {
+    margin-top: 60px;
+}
+
+.exhibition-spaces h2 {
+    margin-left: -28px;
+}
+
+.spaces-robo a,
+.spaces-1 a,
+.spaces-2 a {
+    margin-right: 20px;
+    float: inline-end;
+}
+
+.spaces-1 a {
+    margin-top: 30px;
+}
+
+.spaces-2 a {
+    margin-top: 10px;
+}
+
+.spaces-robo a {
+    margin-top: -10px;
+}
+
+#biology {
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*Explore*/
+
+.explore {
+    background-image: url(../images/binoculars.jpg);
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.for-all {
+    margin-top: 110px;
+}
+
+.ages {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.ages-font-small {
+    font-size: 0.9em;
+}
+
+#teens {
+    bottom: 420px;
+}
+
+#kids {
+    bottom: 390px;
+}
+
+#teachers {
+    bottom: 445px;
+}
+
+#researches {
+    bottom: 350px;
+}
+
+/*Visit*/
+
+.visit {
+    background-image: url(../images/museum-building.jpg);
+    min-height: 55vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tours,
+.accessibility,
+.food,
+.shop {
+    padding: 0px 15px;
+    position: relative;
+}
+
+.tours {
+    background-color: #D47636;
+    height: 50vh;
+}
+
+.accessibility {
+    background-color: #fec400;
+}
+
+.food {
+    background-color: #C741A2;
+}
+
+.shop {
+    background-color: #0277E0;
+}
+
+.admission {
+    margin-left: 40px;
+    padding-bottom: 40px;
+}
+
+.admission h2 {
+    margin-bottom: 0px;
+}
+
+#guided {
+    bottom: 350px;
+}
+
+#access {
+    right: 20px;
+    bottom: 230.883px;
+}
+
+#nutriment {
+    font-size: 1em;
+    bottom: 230.883px;
+}
+
+#store {
+    right: 30px;
+    bottom: 270px;
+}
+
+.services p {
+    margin-bottom: 0px;
+}
+
+/*Exhibition spaces*/
+
+.exhibition {
+    background-image: url(../images/elephant-museum.jpg);
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rooms {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.rooms img {
+    height: 90%;
+    width: 90%;
+}
+
+.rooms p {
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 1.2em;
+}
+
+.rooms h2 {
+    padding-left: 25px;
+}
+
+.exhibition-img {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Tickets*/
+
+.tickets h1 {
+    background-color: #C741A2;
+    color: #FBFCDC;
+    height: 15vh;
+    padding-top: 60px;
+}
+
+/*Involved*/
+
+.involved {
+    background-image: url(../images/three.jpg);
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.be-part {
+    margin-bottom: 60px;
+}
+
+.take-part {
+    padding-top: 50px;
+}
+
+.be-part {
+    position: relative;
+}
+
+.be-part p {
+    font-size: 1.1em;
+}
+
+#support {
+    bottom: 410px;
+}
+
+#volunteer {
+    bottom: 485px;
+}
+
+#internship {
+    bottom: 390px;
+}
+
+/*About Us*/
+
+.csm-info p {
+    font-size: 1.1em;
+}
+
+/*Contact*/
+
+.contact {
+    background-image: url(../images/astronaut.jpg);
+    min-height: 28vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form_input {
+    border: 2px solid #0277E0;
+    background-color: #A5C8E7;
+}
+
+.sign_up,
+.form_input,
+.submit {
+    border-radius: 5px;
+}
+
+.submit {
+    background-color: #0277E0;
+    color: #FBFCDC;
+    float: right;
+    width: 10vh;
+    height: 3.5vh;
+}
+
+.heading-contact {
+    width: 18vh;
+    float: inline-end;
+    margin-top: 110px;
+    margin-right: 20px;
+}
+
+.form {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form div {
+    padding-bottom: 20px;
+}
+
+
